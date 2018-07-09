@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+  <h1>Welcome to Titanium</h1>
+  <h3>Please register to access the task list.</h3>
+    <form method="POST" action="">
+    	<table>
+    		<tr>
+    			<td>{{ form.name.label }}{{ form.name }}</td>
+    			<td>{{ form.email.label }} {{ form.email }}</td>
+    		</tr>
+    		<tr>
+    			<td>{{ form.password.label }}{{ form.password }}</td>
+    			<td>{{ form.confirm.label }}{{ form.confirm }}</td>
+    		</tr>
+    		<tr>
+    			<td>{{ form.typ.label }}{{ form.typ }}</td>
+    		</tr>
+    	</table>
+      <p><input type="submit" value="Register" class="btn-primary"></p>
+    </form>
+    <p><em>Already registered?</em> Click <a href="{{url_for('users.login')}}">here</a> to login.</p>
+{% endblock %}

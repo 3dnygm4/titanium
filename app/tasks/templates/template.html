@@ -1,0 +1,21 @@
+<!-- /app/tasks/templates/tempalte.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Titanium</title>
+    <link rel="stylesheet" href="{{url_for('tasks.static',filename='bootstrap.css')}}">
+  </head>
+  <body>
+    <div class="page">
+      {% for message in get_flashed_messages() %}
+        <div class="flash">{{message}}</div>
+          <br/>
+        {%endfor%}
+      {%if error%}
+        <p class="error"><strong>Error:</strong>{{error}}
+      {%endif%}
+      {%block content%}
+      {%endblock%}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,618 @@
+2013-08-16 02:12:35,217 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:29:54,198 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:48:41,852 ERROR: Exception on /register/ [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\views.py", line 140, in register
+    error = [errors for field,errors in form.errors.items()]
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\templates\register.html", line 1, in top-level template code
+    {% extends "template.html" %}
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\templates\template.html", line 13, in top-level template code
+    {% for errors in error %}
+TypeError: 'NoneType' object is not iterable
+2013-08-16 02:48:48,111 ERROR: Exception on / [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\views.py", line 49, in login
+    return render_template('login.html', form=LoginForm(request.form),error=error)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\templates\login.html", line 1, in top-level template code
+    {% extends "template.html" %}
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\templates\template.html", line 13, in top-level template code
+    {% for errors in error %}
+TypeError: 'NoneType' object is not iterable
+2013-08-16 02:49:16,976 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:49:18,052 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:50:29,548 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:51:04,984 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:51:05,950 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:52:59,825 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:53:44,433 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:53:45,437 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:54:11,125 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:54:35,756 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:54:45,400 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:55:58,940 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:58:36,209 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 02:59:45,460 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:00:39,032 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:00:40,128 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:08:44,249 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:10:45,316 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:11:10,367 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 03:11:24,790 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:04:49,095 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:04:50,812 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:05:50,210 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:05:51,289 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:07:24,121 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:07:24,895 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:07:26,068 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:09:35,836 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-16 04:09:36,950 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:47:57,575 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:48:38,081 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:50:01,709 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:50:14,851 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:56:00,349 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:57:21,714 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 00:57:23,378 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 15:29:10,892 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 15:29:13,325 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 15:54:06,111 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 15:54:07,190 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 16:01:28,369 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 16:01:30,006 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 16:30:29,625 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 16:30:31,108 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 17:18:35,736 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 17:18:36,927 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 17:21:25,434 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 17:21:26,717 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 17:30:12,769 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 21:33:00,223 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 21:33:01,288 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 21:45:20,716 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-17 21:45:22,842 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\flasktaskr\app\__init__.py: 23]
+2013-08-18 01:02:08,250 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:02:58,305 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:03:00,023 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:05:07,674 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:05:09,190 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:47:35,621 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 01:47:37,154 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:15:30,263 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:15:31,809 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:30:53,496 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:30:54,940 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:33:02,467 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:33:04,763 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:33:26,025 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:33:35,341 ERROR: Exception on /tasks/tasks/ [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\views.py", line 18, in wrap
+    return redirect(url_for('login'))
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\helpers.py", line 305, in url_for
+    force_external=external)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\werkzeug\routing.py", line 1620, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('login', {}, None)
+2013-08-18 02:34:11,802 ERROR: Exception on /users/ [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:34:14,634 ERROR: Exception on /users/ [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:34:18,467 ERROR: Exception on /tasks/tasks/ [GET][in C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\views.py", line 18, in wrap
+    return redirect(url_for('login'))
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\flask\helpers.py", line 305, in url_for
+    force_external=external)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\lib\site-packages\werkzeug\routing.py", line 1620, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('login', {}, None)
+2013-08-18 02:36:31,371 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:36:43,546 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:36:47,049 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:36:53,033 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:37:24,061 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:39:38,608 ERROR: Exception on /register/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\tasks\views.py", line 86, in register
+    form = RegisterForm(request.form)
+NameError: global name 'RegisterForm' is not defined
+2013-08-18 02:39:43,190 ERROR: Exception on /register/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\tasks\views.py", line 86, in register
+    form = RegisterForm(request.form)
+NameError: global name 'RegisterForm' is not defined
+2013-08-18 02:39:44,831 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:39:47,513 ERROR: Exception on /register/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\tasks\views.py", line 86, in register
+    form = RegisterForm(request.form)
+NameError: global name 'RegisterForm' is not defined
+2013-08-18 02:40:27,032 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:42:16,842 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:42:21,888 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:42:23,315 ERROR: Exception on /users/ [GET][in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py: 1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\users\views.py", line 42, in login
+    return render_template('users/login.html', form=LoginForm(request.form),error=error)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Python27\lib\site-packages\jinja2-2.7.1-py2.7.egg\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: users/login.html
+2013-08-18 02:47:35,147 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:47:36,816 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:49:39,269 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:49:40,786 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:50:52,770 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:50:54,476 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:52:50,561 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:53:12,967 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:55:24,539 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:56:01,233 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:56:02,673 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 02:58:25,707 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:40:46,025 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:40:48,073 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:49:13,071 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:52:39,615 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:53:28,720 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 14:58:25,582 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 19:20:31,884 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 19:20:33,217 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:13:29,888 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:14:34,927 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:14:48,022 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:15:28,460 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:15:29,466 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:17:06,200 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:17:13,973 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:17:17,253 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:17:18,283 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:25:42,680 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:25:43,246 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:30:11,023 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:30:11,931 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:30:59,055 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2013-08-18 20:30:59,594 INFO: errors[in C:\Users\smile_000\Documents\realPython\flasktaskr_root\Scripts\Blueprint\app\__init__.py: 23]
+2018-07-09 10:31:23,836 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 10:31:24,050 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 11:46:36,700 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 11:46:36,802 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:18:24,202 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:18:43,456 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:19:01,701 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:38:58,380 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:39:46,891 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:44:39,171 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:49:44,538 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:49:51,749 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:50:44,284 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:54:48,278 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:55:11,611 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:58:07,211 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 12:59:55,542 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 13:04:33,110 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 13:04:48,300 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 13:04:48,422 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 13:57:58,960 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 13:57:59,059 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:13:07,677 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:13:07,778 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:20:28,005 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:20:28,110 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:29:16,984 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:29:17,084 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:31:50,215 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:36:20,029 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:36:40,350 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:40:22,542 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:40:22,645 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:52:57,736 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:53:15,853 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:53:15,957 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 14:55:37,089 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:12:13,771 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:14:44,855 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:16:15,551 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:16:40,865 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:17:00,152 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:19:38,303 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:19:56,556 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:20:07,753 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:20:22,970 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:27:35,017 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:34:02,477 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:36:35,831 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 15:37:03,601 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:35:48,336 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:35:50,544 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:41:31,249 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:41:49,147 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:41:49,251 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:43:44,157 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:47:28,567 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:47:36,989 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:48:09,962 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:48:52,409 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 17:50:57,561 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 19:40:45,680 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 19:52:12,441 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 19:55:16,134 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 19:55:41,322 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 19:59:07,049 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 20:02:35,277 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 20:02:35,386 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 20:04:19,693 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 20:04:19,803 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
+2018-07-09 20:18:14,616 INFO: errors[in /home/krud/Python-Flask-taskr/app/__init__.py: 23]
